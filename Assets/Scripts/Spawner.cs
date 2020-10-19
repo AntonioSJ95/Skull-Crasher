@@ -6,7 +6,7 @@ public class Spawner : MonoBehaviour
 {
 
     public Transform[] spawnPoint; //Puntos donde se hara el spawn
-    public GameObject[] ballons; //Gameobject de globos
+    public GameObject[] skulls; //Gameobject de globos
     // Start is called before the first frame update
     void Start()
     {
@@ -19,7 +19,7 @@ public class Spawner : MonoBehaviour
 
       for (int i = 0; i < 3; i++)
       {
-          Instantiate(ballons[i], spawnPoint[i].position, Quaternion.identity);
+          Instantiate(skulls[i], spawnPoint[i].position, Quaternion.identity);
       }
 
       StartCoroutine(Startspawn());
